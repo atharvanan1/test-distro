@@ -13,5 +13,7 @@ BBLAYERS ?= " \
   ##OEROOT##/meta-networking \
   ##OEROOT##/meta-filesystems \
   ##OEROOT##/meta-virtualization \
+  ##OEROOT##/meta-mender-core \
+  ##OEROOT##/meta-mender-tegra \
   ##OEROOT##/meta-testdistro \
   "
