@@ -25,4 +25,4 @@
 [submodule "repos/meta-mender-community"]
 	path = repos/meta-mender-community
 	url = https://github.com/madisongh/meta-mender-community
-	branch = dunfell
+	branch = dunfell-l4t-r32.4.2
