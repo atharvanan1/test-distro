@@ -5,6 +5,7 @@ COMPATIBLE_MACHINE = "(tegra)"
 
 IMAGE_INSTALL = "packagegroup-core-boot tegra-sysinstall-tools haveged sysinstall-pkg"
 IMAGE_INSTALL_append_secureboot = " lvm2-udevrules"
+IMAGE_INSTALL_remove = "mender"
 IMAGE_FEATURES = "empty-root-password allow-empty-password"
 IMAGE_LINUGAS = ""
 
