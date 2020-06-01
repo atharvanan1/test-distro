@@ -1,7 +1,7 @@
 MENDER_DATA_PART_FSTAB_OPTS ?= "defaults,data=journal"
 use_label_for_mender_datapart() {
     if [ -f ${IMAGE_ROOTFS}${sysconfdir}/fstab ]; then
-        sed -i -e's,^${MENDER_DATA_PART},LABEL=DATA,' ${IMAGE_ROOTFS}${sysconfdir}/fstab
+        sed -i -e's,^${MENDER_DATA_PART},LABEL=data,' ${IMAGE_ROOTFS}${sysconfdir}/fstab
     fi
 }
 ROOTFS_POSTPROCESS_COMMAND_append_jetson-tx2-cboot = " use_label_for_mender_datapart;"
