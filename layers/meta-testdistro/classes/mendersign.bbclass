@@ -18,7 +18,7 @@ mendersign() {
     fi
 }
 
-IMAGE_CMD_mender_append() {
+IMAGE_CMD_mender_append_signing() {
     mendersign
 }
 
