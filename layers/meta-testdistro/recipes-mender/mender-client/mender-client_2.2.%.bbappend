@@ -4,5 +4,5 @@ SRCREV = "${AUTOREV}"
 PV .= "+git${SRCPV}"
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/${BPN}:"
-SRC_URI += "file://artifact-verify-key.pem"
+SRC_URI_append_signing = " file://artifact-verify-key.pem"
 LIC_FILES_CHKSUM = "file://src/github.com/mendersoftware/mender/LIC_FILES_CHKSUM.sha256;md5=80ba3790b689991e47685da401fd3375"
