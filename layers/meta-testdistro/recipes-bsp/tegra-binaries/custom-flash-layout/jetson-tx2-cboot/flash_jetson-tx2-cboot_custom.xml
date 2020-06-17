@@ -198,6 +198,7 @@
             <allocation_attribute> 0x8 </allocation_attribute>
             <percent_reserved> 0 </percent_reserved>
             <align_boundary> 4096 </align_boundary>
+            <filename> APPFILE </filename>
         </partition>
         <partition name="MBPNAME" type="MBPTYPE" oem_sign="true">
             <allocation_policy> sequential </allocation_policy>
@@ -491,8 +492,18 @@
             <allocation_attribute> 0x8 </allocation_attribute>
             <percent_reserved> 0 </percent_reserved>
             <align_boundary> 4096 </align_boundary>
+            <filename> APPFILE </filename>
         </partition>
-        <partition name="UDA" type="data">
+	<partition name="DATA" type="data">
+            <allocation_policy> sequential </allocation_policy>
+            <filesystem_type> basic </filesystem_type>
+            <size> 4294967296 </size>
+            <file_system_attribute> 0 </file_system_attribute>
+            <allocation_attribute> 0x8 </allocation_attribute>
+	    <filename> DATAFILE </filename>
+            <percent_reserved> 0 </percent_reserved>
+        </partition>
+        <partition name="unused" type="data">
             <allocation_policy> sequential </allocation_policy>
             <filesystem_type> basic </filesystem_type>
             <size> 18432 </size>
