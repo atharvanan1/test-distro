@@ -1,0 +1,1 @@
+export MENDER_MACHINE
