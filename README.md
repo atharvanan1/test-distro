@@ -15,7 +15,7 @@ and signing.  To remove these requirements, specify:
 Building a mender supported build:
 
 ```
-git checkout --track origin/dunfell-mender-l4t-r32.4.2
+git checkout --track origin/master+wip-mender
 git submodule update --init
 source setup-env
 ```
@@ -24,4 +24,5 @@ In your local.conf
 ```
 SECURITY_OPTIONS = ""
 MACHINE ?= "jetson-tx2-cboot"
+DISTRO ?= "testdistro-mender"
 ```
