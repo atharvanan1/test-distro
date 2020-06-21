@@ -20,8 +20,8 @@
 	branch = master
 [submodule "repos/meta-mender"]
 	path = repos/meta-mender
-	url = https://github.com/Trellis-Logic/meta-mender.git
-	branch = dunfell-l4t-r32.4.2
+	url = https://github.com/mendersoftware/meta-mender.git
+	branch = dunfell-test
 [submodule "repos/meta-mender-community"]
 	path = repos/meta-mender-community
 	url = https://github.com/Trellis-Logic/meta-mender-community.git
